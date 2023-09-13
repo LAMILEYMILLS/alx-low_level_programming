@@ -23,7 +23,7 @@ int main(void)
 
 	for (i = l; i < 91; i++)
 	{
-		print(", %lu", aft);
+		printf(", %lu", aft);
 		aft += bef;
 		bef = aft - bef;
 	}
