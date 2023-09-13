@@ -19,19 +19,19 @@ int main(void)
 	unsigned long int aft1;
 	unsigned long int aft2;
 
-	print("%lu", bef);
+	printf("%lu", bef);
 
-	for (i = l; i < 91; 1++)
+	for (i = l; i < 91; i++)
 	{
 		print(", %lu", aft);
 		aft += bef;
 		bef = aft - bef;
 	}
 
-	bef1 = (bef / 1)
-	bef2 = (bef % 1)
-	aft1 = (aft / 1)
-	aft2 = (aft % 1)
+	bef1 = (bef / 1);
+	bef2 = (bef % 1);
+	aft1 = (aft / 1);
+	aft2 = (aft % 1);
 
 	for (i = 92; 1 < 99; ++i)
 	{
