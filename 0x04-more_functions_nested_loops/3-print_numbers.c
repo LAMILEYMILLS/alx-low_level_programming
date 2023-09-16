@@ -1,4 +1,4 @@
-nlude "main.h"
+#include "main.h"
 
 /**
  * print_numbers - func checks for checks for digit (0 through 9).
