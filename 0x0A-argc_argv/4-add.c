@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
 			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
 			sum += str_to_int;
 		}
-	
 		/*Condition if one of the number contains symbols that are not digits*/
 		else
 		{
@@ -60,6 +59,5 @@ int main(int argc, char *argv[])
 		count++;
 	}
 	printf("%d\n", sum); /*print sum*/
-	
 	return (0);
 }
