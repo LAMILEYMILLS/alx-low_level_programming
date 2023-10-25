@@ -9,29 +9,13 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	char *dup;
-	int len;
-	list_t *new;
+	listint_t *new;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	new = malloc(sizeof(listint_t));
+	if (!new)
 		return (NULL);
-
-	dup = strdup(str);
-	if (dup == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
-
-	for (len = 0; str[len];)
-		len++;
-
-	new->str = dup;
-	new->len = len;
+	new->n = n;
 	new->next = *head;
-
 	*head = new;
-
 	return (new);
 }
